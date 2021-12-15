@@ -1,4 +1,5 @@
 @echo off
+color 17
 title Neon X/1 DC 8 Volt 3.02kb
 IF EXIST boot.bin goto continue
 IF NOT EXIST boot.bin goto fatal
