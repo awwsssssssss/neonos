@@ -66,7 +66,7 @@ start %a%.bat
 goto back
 :setting
 echo About
-echo Neon OS V2.00 All Neon OS
+echo Neon OS V2.90W Snapshot All Neon OS
 echo N
 echo N
 echo E
@@ -74,6 +74,7 @@ echo O
 echo N
 echo v29.10 Kernel
 pause
+goto back
 :restapi
 echo closing process...
 echo cleaning...
@@ -89,4 +90,4 @@ goto nor
 
 
 
-goto back
+
