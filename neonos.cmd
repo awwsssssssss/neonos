@@ -1,20 +1,39 @@
 @echo off
-color 17
 title Neon X/1 DC 8 Volt 3.02kb
+:nor
 IF EXIST boot.bin goto continue
 IF NOT EXIST boot.bin goto fatal
 :fatal
-echo Boot.Bin KRENEL FILE NOT FOUND
-pause
+color 4f
+echo ####################################################################################################
+echo:
+echo:
+echo !STOP 00000000x7719921000
+echo Kernel Error
+echo Internal error
+echo:
+echo:
+echo ####################################################################################################
+pause >nul
 exit
 :continue
-echo Starting Neonos...
+echo Starting hud driver
+echo starting internal
+echo starting data
+echo view database
+echo luingin
+echo driver starting
+echo timeout driver
+echo 100MB RAM 20GB 20BYTE OS 
+TIMEOUT /T 7 /NOBREAK >nul
+cls
+echo                                                                 NEON
  TIMEOUT /T 7 /NOBREAK >nul
 :back
 set a=
 cls
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo #1 Exit# #2 INTERNET CURL# #3 DOWNLOAD# #4 Downloads# #5 About#
+echo #1 Exit# #2 INTERNET CURL# #3 DOWNLOAD# #4 Downloads# #5 About# #6 Restart#
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 set/p a="Desktop>"
 if /i "%a%"=="1" exit
@@ -22,6 +41,7 @@ if /i "%a%"=="2" goto curl
 if /i "%a%"=="3" goto download
 if /i "%a%"=="4" goto downloadsfile
 if /i "%a%"=="5" goto setting
+if /i "%a%"=="6" goto restapi
 goto back
 :curl
 cls
@@ -54,8 +74,12 @@ echo O
 echo N
 echo v29.10 Kernel
 pause
+:restapi
+echo closing process...
+echo cleaning...
+echo wait
 
-
+goto nor
 
 
 
