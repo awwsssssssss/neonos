@@ -1,5 +1,11 @@
 @echo off
+mode con:cols=140 lines=33
 title Neon X/1 DC 8 Volt 3.02kb
+echo                                                   Bios
+echo Chose ING DEFAULT OS
+echo Wait
+echo starting
+timeout /T10 /NOBREAK >nul
 :nor
 IF EXIST boot.bin goto continue
 IF NOT EXIST boot.bin goto fatal
