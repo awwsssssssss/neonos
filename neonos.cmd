@@ -5,7 +5,7 @@ echo                                                   Bios
 echo Chose ING DEFAULT OS
 echo Wait
 echo starting
-timeout /T10 /NOBREAK >nul
+timeout /T 10 /NOBREAK >nul
 :nor
 IF EXIST boot.bin goto continue
 IF NOT EXIST boot.bin goto fatal
@@ -20,6 +20,7 @@ echo Internal error
 echo:
 echo:
 echo ####################################################################################################
+echo ________{Open Setup.bat For Setup}________
 pause >nul
 exit
 :continue
@@ -36,6 +37,7 @@ cls
 echo                                                                 NEON
  TIMEOUT /T 7 /NOBREAK >nul
 :back
+echo $  %time%
 set a=
 cls
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -66,8 +68,8 @@ goto back
 :downloadsfile
 dir
 set a=
-set/p a="Downloads Open File Type>"
-ren %a% "%a%.bat"
+set/p a="Downloads Open File Type Not include nfx and bat>"
+ren %a%.nfx "%a%.bat"
 start %a%.bat
 goto back
 :setting
