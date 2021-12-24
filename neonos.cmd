@@ -1,12 +1,13 @@
 @echo off
 mode con:cols=140 lines=33
-title Neon X/1 DC 8 Volt 3.02kb
+title Neon X/1 DC 8 Volt 38.89kb
 echo  Neon BIos INC
 echo Chose ING DEFAULT OS
 echo Wait
 echo starting
 timeout /T 10 /NOBREAK >nul
 :nor
+color
 IF NOT EXIST slot.xcdn goto github
 IF  EXIST slot.xcdn goto okse
 :okse
@@ -44,12 +45,25 @@ echo luingin
 echo driver starting
 echo timeout driver
 echo 100MB RAM 20GB 20BYTE OS 
+echo finding harddrive
+echo found 600MB DRIVE NEON OF OS
+echo Starting scan...
+echo OK
+Echo Os is starting in 7 second
 TIMEOUT /T 7 /NOBREAK >nul
 cls
-echo                                                                 NEON Genuite:%b%
+echo                                                                            #############
+echo                                                                            #  N  #  E  #
+echo                                                                            #############
+echo                                                                            #  O  #  N  #
+echo                                                                            #############
+echo                                                                             Genuite:%b%
+echo:
+echo:
+echo:
+echo:                                                                              LOADING
  TIMEOUT /T 7 /NOBREAK >nul
 :back
-colorr
 echo $  %time%
 set a=
 cls
@@ -62,12 +76,14 @@ echo :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 color 1f
 set/p a="Desktop>"
+if /i "%a%"=="0" goto errors
 if /i "%a%"=="1" exit
 if /i "%a%"=="2" goto curl
 if /i "%a%"=="3" goto download
 if /i "%a%"=="4" goto downloadsfile
 if /i "%a%"=="5" goto setting
 if /i "%a%"=="6" goto restapi
+
 goto back
 :curl
 cls
@@ -92,12 +108,13 @@ start %a%.bat
 goto back
 :setting
 echo About
-echo Neon OS V2.99A Beta All Neon OS
-echo N
+echo Neon OS V3.91N Public All Neon OS
 echo N
 echo E
 echo O
 echo N
+echo.
+echo PUBLIC 2022 editon
 echo v29.30 Kernel
 pause
 goto back
@@ -107,6 +124,16 @@ echo cleaning...
 echo wait
 
 goto nor
+:errors
+color 4f
+cls
+echo :(ERROR TYPE):
+echo Error For Use The users
+echo restart in 5 Seconds
+timeout 5 /NOBREAK >nul
+cls
+color
+goto restapi
 
 
 
