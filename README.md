@@ -2,7 +2,8 @@
 # NEON V1.00 Outdated
 # Neon V2.00 Outdated
 # Neon v3.90W Snapshot Outdated
-# Neon V2.99W Beta Out 
+# Neon V2.99W Beta Outdated
+# Neon V3.91N Public Out 2022 [Genuite]
 # New Kernel Version
 # How install
 # This is simple for install
