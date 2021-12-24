@@ -7,6 +7,13 @@ echo Wait
 echo starting
 timeout /T 10 /NOBREAK >nul
 :nor
+IF NOT EXIST slot.xcdn goto github
+IF  EXIST slot.xcdn goto cvn
+:github
+set b=NOT
+echo Sorry Neon Os Is Not Genuite
+pause
+:go
 IF EXIST boot.bin goto continue
 IF NOT EXIST boot.bin goto fatal
 :fatal
@@ -24,6 +31,7 @@ echo ________{Open Setup.bat For Setup}________
 pause >nul
 exit
 :continue
+echo Genuite:%b%
 echo Starting hud driver
 echo starting internal
 echo starting data
@@ -34,15 +42,15 @@ echo timeout driver
 echo 100MB RAM 20GB 20BYTE OS 
 TIMEOUT /T 7 /NOBREAK >nul
 cls
-echo                                                                 NEON
+echo                                                                 NEON Genuite:%b%
  TIMEOUT /T 7 /NOBREAK >nul
 :back
 echo $  %time%
 set a=
 cls
-echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo #1 Exit# #2 INTERNET CURL# #3 DOWNLOAD# #4 Downloads# #5 About# #6 Restart#
-echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+echo :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+echo : #1 Exit# #2 INTERNET CURL# #3 DOWNLOAD# #4 Downloads# #5 About# #6 Restart#   Status Active:%b%  Time:%time%    :
+echo :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 set/p a="Desktop>"
 if /i "%a%"=="1" exit
 if /i "%a%"=="2" goto curl
@@ -74,13 +82,13 @@ start %a%.bat
 goto back
 :setting
 echo About
-echo Neon OS V2.90W Snapshot All Neon OS
+echo Neon OS V2.99A Beta All Neon OS
 echo N
 echo N
 echo E
 echo O
 echo N
-echo v29.10 Kernel
+echo v29.30 Kernel
 pause
 goto back
 :restapi
