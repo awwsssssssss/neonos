@@ -8,7 +8,10 @@ echo starting
 timeout /T 10 /NOBREAK >nul
 :nor
 IF NOT EXIST slot.xcdn goto github
-IF  EXIST slot.xcdn goto cvn
+IF  EXIST slot.xcdn goto okse
+:okse
+set b=Yes
+goto go
 :github
 set b=NOT
 echo Sorry Neon Os Is Not Genuite
