@@ -1,7 +1,7 @@
 @echo off
 mode con:cols=140 lines=33
 title Neon X/1 DC 8 Volt 3.02kb
-echo                                                   Bios
+echo  Neon BIos INC
 echo Chose ING DEFAULT OS
 echo Wait
 echo starting
