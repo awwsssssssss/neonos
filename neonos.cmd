@@ -13,6 +13,7 @@ IF  EXIST slot.xcdn goto cvn
 set b=NOT
 echo Sorry Neon Os Is Not Genuite
 pause
+goto go
 :go
 IF EXIST boot.bin goto continue
 IF NOT EXIST boot.bin goto fatal
