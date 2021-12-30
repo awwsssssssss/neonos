@@ -108,7 +108,7 @@ goto back
 mkdir web
 cd web
 IF NOT EXIST index.php curl https://raw.githubusercontent.com/awwsssssssss/neonos/main/webserver/index.php >index.php
-start php -S 0.0.0.0:7182 -t web
+start php -S 0.0.0.0:7182 
 cd..
 goto back
 :curl
