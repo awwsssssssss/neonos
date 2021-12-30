@@ -1,10 +1,18 @@
 @echo off
 mode con:cols=140 lines=33
 title Neon X/1 DC 8 Volt 38.89kb
-echo  Neon BIos INC
-echo Chose ING DEFAULT OS
-echo Wait
-echo starting
+echo  SEA BIOS IMAGE
+echo MOUNT
+echo GETI
+
+timeout /T 10 /NOBREAK >nul
+cls
+echo DATE # TIME
+echo ###########
+echo SKIPED
+echo ###########
+echo BEARCHMARK SKIPPED
+
 timeout /T 10 /NOBREAK >nul
 :nor
 color
