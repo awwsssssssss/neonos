@@ -80,7 +80,7 @@ echo :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 echo : #1 Exit# #2 INTERNET CURL# #3 DOWNLOAD# #4 Downloads# #5 About# #6 Restart#   Status Active:%b%  Time:%time%                      :
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo : #7 test background(coming soon)#                                                                                                       :
+echo : #7 test background(coming soon)#    #8 Web Server#                                                                                     :
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 color 1f
@@ -92,7 +92,16 @@ if /i "%a%"=="3" goto download
 if /i "%a%"=="4" goto downloadsfile
 if /i "%a%"=="5" goto setting
 if /i "%a%"=="6" goto restapi
+if /i "%a%"=="7"  goto webserver
 
+
+goto back
+:webserver
+mkdir web
+cd web
+IF EXIST index.php 
+start php -s 0.0.0.0:7182 -t web
+cd..
 goto back
 :curl
 cls
