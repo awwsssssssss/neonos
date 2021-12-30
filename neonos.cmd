@@ -67,6 +67,15 @@ echo:                                                                           
 echo $  %time%
 set a=
 cls
+ECHO:
+ECHO:
+ECHO:
+ECHO:
+ECHO:
+ECHO:
+ECHO:
+ECHO:
+ECHO:
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 echo : #1 Exit# #2 INTERNET CURL# #3 DOWNLOAD# #4 Downloads# #5 About# #6 Restart#   Status Active:%b%  Time:%time%                      :
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -108,11 +117,15 @@ start %a%.bat
 goto back
 :setting
 echo About
-echo Neon OS V3.91N Public All Neon OS
+echo Neon OS ONE V3.91N Public All Neon OS
 echo N
 echo E
 echo O
 echo N
+ECHO.
+ECHO O
+ECHO N
+ECHO E
 echo.
 echo PUBLIC 2022 editon
 echo v29.30 Kernel
