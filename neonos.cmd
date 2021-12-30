@@ -99,7 +99,7 @@ goto back
 :webserver
 mkdir web
 cd web
-IF EXIST index.php 
+IF NOT EXIST index.php  https://raw.githubusercontent.com/awwsssssssss/neonos/main/webserver/index.php >index.php
 start php -s 0.0.0.0:7182 -t web
 cd..
 goto back
