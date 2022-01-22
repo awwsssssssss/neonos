@@ -212,15 +212,15 @@ start %a%.bat
 goto back
 :setting
 echo About
-echo Neon OS ONE V3.91N Public All Neon OS
+echo Neon OS ONE V4.1N Public All Neon OS
 echo N
 echo E
 echo O
 echo N
 ECHO.
+ECHO T
+ECHO W
 ECHO O
-ECHO N
-ECHO E
 echo.
 echo PUBLIC 2022 editon
 echo v29.30 Kernel
