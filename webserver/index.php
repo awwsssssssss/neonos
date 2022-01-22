@@ -1,7 +1,7 @@
 <?php
 $text = 1;
 ?>
-<div style="color:white;background:red;"><img src="https://raw.githubusercontent.com/awwsssssssss/neonos/main/webserver/neonone.png">NEON ONE PHP WEB SERVER</div><h1>Neon <?php echo $text;?>  CFA(CLIENT FLASH AUTOMATIC) Page</h1>
+<div style="color:white;background:red;"><img src="https://raw.githubusercontent.com/awwsssssssss/neonos/main/webserver/neonone.png">NEON TWO PHP WEB SERVER</div><h1>Neon <?php echo $text;?>  CFA(CLIENT FLASH AUTOMATIC) Page</h1>
 <p>ITS WORKS</p>
 <p>EDIT index.php</p>
 <p>Database 2.0 #40</p>
