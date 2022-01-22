@@ -57,7 +57,57 @@ echo finding harddrive
 echo found 600MB DRIVE NEON OF OS
 echo Starting scan...
 echo OK
-Echo Os is starting in 7 second
+Echo Wating
+TIMEOUT /T 7 /NOBREAK >nul
+cls
+echo [=            ]
+TIMEOUT /T 1 /NOBREAK >nul
+echo [==           ]
+TIMEOUT /T 1 /NOBREAK >nul
+echo [===          ]
+TIMEOUT /T 1 /NOBREAK >nul
+echo [====         ]
+TIMEOUT /T 1 /NOBREAK >nul
+echo [=====        ]
+TIMEOUT /T 1 /NOBREAK >nul
+echo [======       ]
+TIMEOUT /T 1 /NOBREAK >nul
+echo [=======      ]
+TIMEOUT /T 1 /NOBREAK >nul
+echo [========     ]
+TIMEOUT /T 1 /NOBREAK >nul
+echo [=========    ]
+TIMEOUT /T 1 /NOBREAK >nul
+echo [==========   ]
+TIMEOUT /T 1 /NOBREAK >nul
+echo [===========  ]
+TIMEOUT /T 1 /NOBREAK >nul
+echo [============ ]
+TIMEOUT /T 1 /NOBREAK >nul
+echo [=============]
+echo clear
+echo ok
+echo wait
+echo starting
+echo loading
+echo is vds 
+echo #============# OK
+TIMEOUT /T 1 /NOBREAK >nul
+echo #============# OK
+TIMEOUT /T 1 /NOBREAK >nul
+echo #============# OK
+TIMEOUT /T 1 /NOBREAK >nul
+echo #============# OK
+TIMEOUT /T 1 /NOBREAK >nul
+echo #============# OK
+TIMEOUT /T 1 /NOBREAK >nul
+echo #============# OK
+TIMEOUT /T 1 /NOBREAK >nul
+echo #============# OK
+TIMEOUT /T 1 /NOBREAK >nul
+echo #============# OK
+TIMEOUT /T 1 /NOBREAK >nul
+echo Neon Os Is 7 Second Of Starting
 TIMEOUT /T 7 /NOBREAK >nul
 cls
 echo                                                                            #############
@@ -88,7 +138,7 @@ echo :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 echo : #1 Exit# #2 INTERNET CURL# #3 DOWNLOAD# #4 Downloads# #5 About# #6 Restart#   Status Active:%b%  Time:%time%                      :
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo : #7 test background(coming soon)#    #8 Web Server#                                                                                     :
+echo : #7 test background#    #8 Web Server#   #9 Bank Manager#                                                                               :
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 color 1f
@@ -100,7 +150,8 @@ if /i "%a%"=="3" goto download
 if /i "%a%"=="4" goto downloadsfile
 if /i "%a%"=="5" goto setting
 if /i "%a%"=="6" goto restapi
-if /i "%a%"=="7"  goto webserver
+if /i "%a%"=="7"  goto display
+if /i "%a%"=="8"  goto webserver
 
 
 goto back
@@ -164,10 +215,13 @@ timeout 5 /NOBREAK >nul
 cls
 color
 goto restapi
-
-
-
-
+:display
+color a
+echo ??
+timeout 1 /NOBREAK >nul
+color c
+echo ??
+goto back
 
 
 
