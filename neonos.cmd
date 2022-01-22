@@ -60,31 +60,58 @@ echo OK
 Echo Wating
 TIMEOUT /T 7 /NOBREAK >nul
 cls
+echo Loading iso:
 echo [=            ]
 TIMEOUT /T 1 /NOBREAK >nul
+cls
+echo Loading iso:
 echo [==           ]
 TIMEOUT /T 1 /NOBREAK >nul
+cls
+echo Loading iso:
 echo [===          ]
 TIMEOUT /T 1 /NOBREAK >nul
+cls
+echo Loading iso:
 echo [====         ]
 TIMEOUT /T 1 /NOBREAK >nul
+cls
+echo Loading iso:
 echo [=====        ]
 TIMEOUT /T 1 /NOBREAK >nul
+cls
+echo Loading iso:
 echo [======       ]
 TIMEOUT /T 1 /NOBREAK >nul
+cls
+echo Loading iso:
 echo [=======      ]
 TIMEOUT /T 1 /NOBREAK >nul
+cls
+echo Loading iso:
 echo [========     ]
 TIMEOUT /T 1 /NOBREAK >nul
+cls
+echo Loading iso:
 echo [=========    ]
 TIMEOUT /T 1 /NOBREAK >nul
+cls
+echo Loading iso:
 echo [==========   ]
 TIMEOUT /T 1 /NOBREAK >nul
+cls
+echo Loading iso:
 echo [===========  ]
 TIMEOUT /T 1 /NOBREAK >nul
+cls
+echo Loading iso:
 echo [============ ]
 TIMEOUT /T 1 /NOBREAK >nul
+cls
+echo Loading iso:
 echo [=============]
+TIMEOUT /T 7 /NOBREAK >nul
+cls
 echo clear
 echo ok
 echo wait
