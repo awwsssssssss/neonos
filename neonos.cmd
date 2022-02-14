@@ -1,6 +1,6 @@
 @echo off
 mode con:cols=140 lines=33
-title Neon X/1 DC 8 Volt 38.89kb
+title Neon X/1 DC 8 Volt 3MB
 echo  SEA BIOS IMAGE
 echo MOUNT
 echo GETI
@@ -141,12 +141,12 @@ echo                                                                            
 echo                                                                            #  N  #  E  #
 echo                                                                            #############
 echo                                                                            #  O  #  N  #
-echo                                                                            #############
+echo                                                                            Server###Home
 echo                                                                             Genuite:%b%
 echo:
 echo:
 echo:
-echo:                                                                              LOADING
+echo:                                                                              
  TIMEOUT /T 7 /NOBREAK >nul
 :back
 echo $  %time%
@@ -154,7 +154,7 @@ set a=
 cls
 ECHO:
 ECHO:
-ECHO:
+ECHO                         Neon Os @ Neon 2004/2022
 ECHO:
 ECHO:
 ECHO:
@@ -165,7 +165,7 @@ echo :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 echo : #1 Exit# #2 INTERNET CURL# #3 DOWNLOAD# #4 Downloads# #5 About# #6 Restart#   Status Active:%b%  Time:%time%                      :
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo : #7 test background#    #8 Web Server#   #9 Bank Manager#                                                                               :
+echo : #7 test background#    #8 Web Server#   #9 Console#                                                                                    :
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 color 1f
@@ -179,7 +179,7 @@ if /i "%a%"=="5" goto setting
 if /i "%a%"=="6" goto restapi
 if /i "%a%"=="7"  goto display
 if /i "%a%"=="8"  goto webserver
-
+if /i "%a%"=="9"  goto cmdsbar
 
 goto back
 :webserver
@@ -212,7 +212,7 @@ start %a%.bat
 goto back
 :setting
 echo About
-echo Neon OS ONE V4.1N Public All Neon OS
+echo Neon OS ONE V4.36 Build 8145  All Neon OS
 echo N
 echo E
 echo O
@@ -222,8 +222,8 @@ ECHO T
 ECHO W
 ECHO O
 echo.
-echo PUBLIC 2022 editon
-echo v29.30 Kernel
+echo Build 2022 editon
+echo v30.01 Kernel
 pause
 goto back
 :restapi
@@ -250,8 +250,13 @@ color c
 echo ??
 goto back
 
-
-
-
-
+:cmds
+set/p g="$~"
+if /i "%a%"=="restart"  goto restapi
+if /i "%g%"=="exit"  goto back
+if /i "%a%"=="9"  goto cdass
+goto cmds
+:cdass
+cls
+goto cmds
 
