@@ -4,7 +4,8 @@
 # Neon v3.90W Snapshot Outdated
 # Neon V2.99W Beta Outdated
 # Neon V3.91N Public Outdated
-# Neon V4.1N Public Out 2022 [Neon Two]
+# Neon V4.1N Public Outdated
+# Neon V4.36 Build 8145 Out Now
 # New Kernel Version
 # How install
 # This is simple for install
