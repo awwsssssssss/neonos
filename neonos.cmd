@@ -1,6 +1,7 @@
 @echo off
 mode con:cols=140 lines=33
 title Neon X/1 DC 8 Volt 3MB
+echo Update Is working
 echo  SEA BIOS IMAGE
 echo MOUNT
 echo GETI
@@ -61,55 +62,59 @@ Echo Wating
 TIMEOUT /T 7 /NOBREAK >nul
 cls
 echo Loading iso:
-echo [=            ]
+echo [=             ]
 TIMEOUT /T 1 /NOBREAK >nul
 cls
 echo Loading iso:
-echo [==           ]
+echo [==            ]
 TIMEOUT /T 1 /NOBREAK >nul
 cls
 echo Loading iso:
-echo [===          ]
+echo [===           ]
 TIMEOUT /T 1 /NOBREAK >nul
 cls
 echo Loading iso:
-echo [====         ]
+echo [====          ]
 TIMEOUT /T 1 /NOBREAK >nul
 cls
 echo Loading iso:
-echo [=====        ]
+echo [=====         ]
 TIMEOUT /T 1 /NOBREAK >nul
 cls
 echo Loading iso:
-echo [======       ]
+echo [======        ]
 TIMEOUT /T 1 /NOBREAK >nul
 cls
 echo Loading iso:
-echo [=======      ]
+echo [=======       ]
 TIMEOUT /T 1 /NOBREAK >nul
 cls
 echo Loading iso:
-echo [========     ]
+echo [========      ]
 TIMEOUT /T 1 /NOBREAK >nul
 cls
 echo Loading iso:
-echo [=========    ]
+echo [=========     ]
 TIMEOUT /T 1 /NOBREAK >nul
 cls
 echo Loading iso:
-echo [==========   ]
+echo [==========    ]
 TIMEOUT /T 1 /NOBREAK >nul
 cls
 echo Loading iso:
-echo [===========  ]
+echo [===========   ]
 TIMEOUT /T 1 /NOBREAK >nul
 cls
 echo Loading iso:
-echo [============ ]
+echo [============  ]
 TIMEOUT /T 1 /NOBREAK >nul
 cls
 echo Loading iso:
-echo [=============]
+echo [============= ]
+TIMEOUT /T 1 /NOBREAK >nul
+cls
+echo Loading iso:
+echo [==============]
 TIMEOUT /T 7 /NOBREAK >nul
 cls
 echo clear
@@ -255,7 +260,7 @@ goto back
 set/p g="$~"
 if /i "%g%"=="restart"  goto restapi
 if /i "%g%"=="exit"  goto back
-if /i "%g%"=="9"  goto cdass
+if /i "%g%"=="clear"  goto cdass
 goto cmds
 :cdass
 cls
@@ -263,4 +268,5 @@ goto cmds
 :updatesfortnite
 echo Leak Update Is Nothing Updateing...
 start setup.bat -update
+exit
 
