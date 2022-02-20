@@ -7,7 +7,7 @@ echo MOUNT
 echo GETI
 
 timeout /T 10 /NOBREAK >nul
-if "%1"=="-u" goto nnnnnnnnnnnnnnnn
+
 
 cls
 echo DATE # TIME
@@ -155,6 +155,7 @@ echo:
 echo:
 echo:                                                                              
  TIMEOUT /T 7 /NOBREAK >nul
+ if "%1"=="-u" goto nnnnnnnnnnnnnnnn
 :back
 echo $  %time%
 set a=
