@@ -184,7 +184,7 @@ if /i "%a%"=="5" goto setting
 if /i "%a%"=="6" goto restapi
 if /i "%a%"=="7"  goto display
 if /i "%a%"=="8"  goto webserver
-if /i "%a%"=="9"  goto cmdsbar
+if /i "%a%"=="9"  goto cmds
 if /i "%a%"=="10" goto updatesfortnite
 
 goto back
