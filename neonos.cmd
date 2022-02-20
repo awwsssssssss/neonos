@@ -7,6 +7,8 @@ echo MOUNT
 echo GETI
 
 timeout /T 10 /NOBREAK >nul
+if "%1"=="-u" goto nnnnnnnnnnnnnnnn
+
 cls
 echo DATE # TIME
 echo ###########
@@ -271,4 +273,12 @@ curl https://raw.githubusercontent.com/awwsssssssss/neonos/main/setup.bat > setu
 echo Restarting...
 start setup.bat -update
 exit
-
+:nnnnnnnnnnnnnnnn
+echo Loading.............
+timeout /T 2 /NOBREAK >nul
+echo Update Complete
+timeout /T 2 /NOBREAK >nul
+echo Getting To Loader
+timeout /T 2 /NOBREAK >nul
+echo Get To Desktop
+goto back
