@@ -173,7 +173,7 @@ echo :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 echo : #1 Exit# #2 INTERNET CURL# #3 DOWNLOAD# #4 Downloads# #5 About# #6 Restart#   Status Active:%b%  Time:%time%                      :
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo : #7 test background#    #8 Web Server#   #9 Console#   #10 Update#                                                                      :
+echo : #7 test background#    #8 Web Server#   #9 Console#   #10 Update#   #11 View Source Code#                                              :
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 color 1f
@@ -189,6 +189,7 @@ if /i "%a%"=="7"  goto display
 if /i "%a%"=="8"  goto webserver
 if /i "%a%"=="9"  goto cmds
 if /i "%a%"=="10" goto updatesfortnite
+if /i "%a%"=="11" goto lscmdsa
 
 goto back
 :webserver
@@ -282,4 +283,9 @@ timeout /T 2 /NOBREAK >nul
 echo Getting To Loader
 timeout /T 2 /NOBREAK >nul
 echo Get To Desktop
+goto back
+:lscmdsa
+type neonos.cmd
+type setup.bat
+type boot.bin
 goto back
