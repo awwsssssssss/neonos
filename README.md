@@ -1,16 +1,13 @@
-# Versions
-# NEON V1.00 Outdated
-# Neon V2.00 Outdated
-# Neon v3.90W Snapshot Outdated
-# Neon V2.99W Beta Outdated
-# Neon V3.91N Public Outdated
-# Neon V4.1N Public Outdated
-# Neon V4.36 Build 8145 Out Now
+# Neon V2.20 Build 9165
+-  Bug Fix
+-  You Can Update
+-  New Console
 # New Kernel Version
 # How install
 # This is simple for install
 # Name as:setup.bat
-# code:@echo off
+# code:
+# @echo off
 # echo any key for start install
 # pause
 # if NOT EXIST slot.xcdn curl https://raw.githubusercontent.com/awwsssssssss/neonos/main/data/meta/slot.xcdn > slot.xcdn
