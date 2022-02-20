@@ -213,7 +213,7 @@ start %a%.bat
 goto back
 :setting
 echo About
-echo Neon OS ONE V4.36 Build 8145  All Neon OS
+echo Neon OS ONE V4.36 Build 9165  All Neon OS
 echo N
 echo E
 echo O
