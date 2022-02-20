@@ -267,6 +267,8 @@ cls
 goto cmds
 :updatesfortnite
 echo Leak Update Is Nothing Updateing...
+curl https://raw.githubusercontent.com/awwsssssssss/neonos/main/setup.bat > setup.bat
+echo Restarting...
 start setup.bat -update
 exit
 
