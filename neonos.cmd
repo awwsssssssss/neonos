@@ -165,7 +165,7 @@ echo :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 echo : #1 Exit# #2 INTERNET CURL# #3 DOWNLOAD# #4 Downloads# #5 About# #6 Restart#   Status Active:%b%  Time:%time%                      :
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-echo : #7 test background#    #8 Web Server#   #9 Console#                                                                                    :
+echo : #7 test background#    #8 Web Server#   #9 Console#   #10 Update#                                                                      :
 echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 color 1f
@@ -180,6 +180,7 @@ if /i "%a%"=="6" goto restapi
 if /i "%a%"=="7"  goto display
 if /i "%a%"=="8"  goto webserver
 if /i "%a%"=="9"  goto cmdsbar
+if /i "%a%"=="10" goto updatesfortnite
 
 goto back
 :webserver
@@ -252,11 +253,14 @@ goto back
 
 :cmds
 set/p g="$~"
-if /i "%a%"=="restart"  goto restapi
+if /i "%g%"=="restart"  goto restapi
 if /i "%g%"=="exit"  goto back
-if /i "%a%"=="9"  goto cdass
+if /i "%g%"=="9"  goto cdass
 goto cmds
 :cdass
 cls
 goto cmds
+:updatesfortnite
+echo Leak Update Is Nothing Updateing...
+start setup.bat -update
 
