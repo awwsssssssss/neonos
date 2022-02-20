@@ -10,3 +10,5 @@ if EXIST neonos.cmd neonos.cmd
 :updater
 del neonos.cmd
 if NOT EXIST neonos.cmd curl https://raw.githubusercontent.com/awwsssssssss/neonos/main/neonos.cmd >neonos.cmd
+
+neonos.cmd
