@@ -1,7 +1,7 @@
 @echo off
 mode con:cols=140 lines=33
 title Neon X/1 DC 8 Volt 3MB
-echo Update Is working
+echo Fine
 echo  SEA BIOS IMAGE
 echo MOUNT
 echo GETI
@@ -206,16 +206,17 @@ echo ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 color 1f
 set/p a="Desktop>"
 echo ............................................................................................
-TIMEOUT /T /NOBREAK 1 >nul
+TIMEOUT /T 9 /NOBREAK  >nul
 echo ............................................................................................
-TIMEOUT /T /NOBREAK 1 >nul
+TIMEOUT /T 2 /NOBREAK  >nul
 echo ............................................................................................
-TIMEOUT /T /NOBREAK 1 >nul
+TIMEOUT /T 3 /NOBREAK  >nul
 echo ............................................................................................
-TIMEOUT /T /NOBREAK 1 >nul
+TIMEOUT /T  4 /NOBREAK  >nul
 echo ............................................................................................
-TIMEOUT /T /NOBREAK 1 >nul
+TIMEOUT /T 2 /NOBREAK  >nul
 echo ............................................................................................
+cls
 
 
 if /i "%a%"=="0" goto errors
@@ -316,13 +317,18 @@ echo Restarting...
 start setup.bat -update
 exit
 :nnnnnnnnnnnnnnnn
-echo Loading.............
+echo Updateing...
+echo [0   ]
 timeout /T 2 /NOBREAK >nul
-echo Update Complete
+echo Updateing...
+echo [00  ]
 timeout /T 2 /NOBREAK >nul
-echo Getting To Loader
+echo Updateing...
+echo [000 ]
 timeout /T 2 /NOBREAK >nul
-echo Get To Desktop
+echo Updateing...
+echo [0000]
+timeout /T 2 /NOBREAK >nul
 goto back
 :lscmdsa
 type neonos.cmd
