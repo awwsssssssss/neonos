@@ -1,7 +1,7 @@
 # Neon V2.34 RTM
--  Bug Fix
--  You Can Update
--  New Console
+-  New Version Public
+-  New Kernel
+-  New UI
 # New Kernel Version
 # How install
 # This is simple for install
