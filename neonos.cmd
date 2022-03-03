@@ -12,7 +12,7 @@ timeout /T 10 /NOBREAK >nul
 cls
 echo DATE # TIME
 echo ###########
-echo SKIPED
+echo @@@@@@@@@@@
 echo ###########
 echo BEARCHMARK SKIPPED
 
@@ -148,7 +148,7 @@ echo                                                                            
 echo                                                                            #  N  #  E  #
 echo                                                                            #############
 echo                                                                            #  O  #  N  #
-echo                                                                            Server###Home
+echo                                                                            Server###Public
 echo                                                                             Genuite:%b%
 echo:
 echo:
@@ -309,16 +309,16 @@ start setup.bat -update
 exit
 :nnnnnnnnnnnnnnnn
 echo Updateing...
-echo [0   ]
+echo [/   ]
 timeout /T 2 /NOBREAK >nul
 echo Updateing...
-echo [00  ]
+echo [ \  ]
 timeout /T 2 /NOBREAK >nul
 echo Updateing...
-echo [000 ]
+echo [  / ]
 timeout /T 2 /NOBREAK >nul
 echo Updateing...
-echo [0000]
+echo [   \]
 timeout /T 2 /NOBREAK >nul
 goto back
 :lscmdsa
