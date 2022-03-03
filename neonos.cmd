@@ -1,10 +1,9 @@
 @echo off
 mode con:cols=140 lines=33
-title Neon X/1 DC 8 Volt 3MB
-echo Fine
-echo  SEA BIOS IMAGE
-echo MOUNT
-echo GETI
+title Neon X/2 DC 20 Volt 9MB
+echo Neon Bios Unity 
+echo [   OK   ]
+echo Neon Unity Bios Is Okay Neon Will Start
 
 timeout /T 10 /NOBREAK >nul
 
