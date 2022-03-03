@@ -254,7 +254,7 @@ start %a%.bat
 goto back
 :setting
 echo About
-echo Neon OS Two V2.34 RTM  All Neon OS
+echo Neon OS Two V2.44 RTM  All Neon OS
 echo N
 echo E
 echo O
