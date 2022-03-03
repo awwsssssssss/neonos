@@ -8,6 +8,11 @@ if NOT EXIST neonos.cmd curl https://raw.githubusercontent.com/awwsssssssss/neon
 if NOT EXIST boot.bin curl https://raw.githubusercontent.com/awwsssssssss/neonos/main/boot.bin >boot.bin
 if EXIST neonos.cmd neonos.cmd
 :updater
+echo Neon Bios Unity 
+echo [   OK   ]
+echo Neon Unity Bios Is Okay Neon Will Start
+
+timeout /T 10 /NOBREAK >nul
 echo ###########
 echo ## N ## E #               !!!
 echo ###########               !
@@ -132,4 +137,41 @@ cls
 echo ------------------------------------Neon--Os-------------------------------------------------
 echo [      =]
 TIMEOUT /T 1 /NOBREAK >nul
+cls
+echo Neon Os Will Restart In 10Sec
+timeout /T 1 /NOBREAK >nul
+cls
+echo Neon Os Will Restart In 9Sec
+timeout /T 1 /NOBREAK >nul
+cls
+echo Neon Os Will Restart In 8Sec
+timeout /T 1 /NOBREAK >nul
+cls
+echo Neon Os Will Restart In 7Sec
+timeout /T 1 /NOBREAK >nul
+cls
+echo Neon Os Will Restart In 6Sec
+timeout /T 1 /NOBREAK >nul
+cls
+echo Neon Os Will Restart In 5Sec
+timeout /T 1 /NOBREAK >nul
+cls
+echo Neon Os Will Restart In 4Sec
+timeout /T 1 /NOBREAK >nul
+cls
+echo Neon Os Will Restart In 3Sec
+timeout /T 1 /NOBREAK >nul
+cls
+echo Neon Os Will Restart In 2Sec
+timeout /T 1 /NOBREAK >nul
+cls
+echo Neon Os Will Restart In 1Sec
+timeout /T 1 /NOBREAK >nul
+cls
+echo Neon Os Will Restart In 0Sec
+timeout /T 1 /NOBREAK >nul
+echo Restarting...
+
+timeout /T 2 /NOBREAK >nul
+
 neonos.cmd -u
