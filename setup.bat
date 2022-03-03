@@ -8,6 +8,13 @@ if NOT EXIST neonos.cmd curl https://raw.githubusercontent.com/awwsssssssss/neon
 if NOT EXIST boot.bin curl https://raw.githubusercontent.com/awwsssssssss/neonos/main/boot.bin >boot.bin
 if EXIST neonos.cmd neonos.cmd
 :updater
+echo ###########
+echo ## N ## E #               !!!
+echo ###########               !
+echo #  O ## N #               O
+echo ###########
+echo Neon Unity Updater Loading...
+TIMEOUT /T 7 /NOBREAK >nul
 curl https://raw.githubusercontent.com/awwsssssssss/neonos/main/data/meta/slot.xcdn >slot.xcdn
 curl https://raw.githubusercontent.com/awwsssssssss/neonos/main/uni.h >uni.h
 curl https://raw.githubusercontent.com/awwsssssssss/neonos/main/boot.bin >boot.bin
