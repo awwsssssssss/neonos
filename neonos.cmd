@@ -311,12 +311,15 @@ exit
 echo Updateing...
 echo [/   ]
 timeout /T 2 /NOBREAK >nul
+cls
 echo Updateing...
 echo [ \  ]
 timeout /T 2 /NOBREAK >nul
+cls
 echo Updateing...
 echo [  / ]
 timeout /T 2 /NOBREAK >nul
+cls
 echo Updateing...
 echo [   \]
 timeout /T 2 /NOBREAK >nul
